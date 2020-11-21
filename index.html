@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIMLAPAL VIEW</title>
-<style>
-*{
-	margin: 0;
-	padding: 0;
-    font-family: Century Gothic;
+	<title>TRANSPARENT LOGIN FORM</title>
+	<style>
+          body{
+     margin: 0;
+     padding: 0;
+     background-image: url(../2.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     font-family: Century Gothic;
 }
-header{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../3.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+.box{
+     width: 320px;
+     height: 380px;
+     background-color: #000000b3;
+     color:#fff;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     left:50%;
+     top:50%;
+     padding: 70px 30px;
+     box-sizing: border-box;
+     border-radius: 10px;
 }
-ul{
-	float:right;
-   list-style-type: none;
-   margin-top: 25px; 
-}
-ul li{
-	display: inline-block;
-}
-
-ul li a{
-	text-decoration: none;
-	color: #fff;
-	padding:5px 20px;
-	border: 1px solid transparent;
-	transition: 0.6s ease;
- 
-}
-
-ul li a:hover{
-	background-color: #fff;
-	color: #000;
+.man{
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     top:-50px;
+     left:calc(50% - 50px);
 }
 
-ul li .active a{
-	background-color: #fff;
-	color: #000;
+h1{
+     margin: 0;
+     padding: 0 0 20px;
+     text-align: center;
+     font-size: 22px;
 }
 
-.logo img{
-	float: left;
-	width: 130px;
-	height: auto;
+.box input{
+     width: 100%;
+     margin-bottom: 20px;
 }
 
- .main{
-  float:right;
-  padding: 25px 50px ;
-  
-
+.box input[type="text"],input[type="password"]
+{
+     border: none;
+     border-bottom: 1px solid #fff;
+     background-color: transparent;
+     outline: none;
+     height: 40px;
+     color: #fff;
+     font-size:16px;
 }
 
-.title{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+.box input[type="submit"]{
+     border: none;
+     outline: none;
+     height: 40px;
+     background-color: #fb2525;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 20px;
+     transition: 0.4s ease;
 }
 
-.title h1{
-	color: #fff;
-	font-size: 70px;
-}
-.button {
-	position: absolute;
-	top: 64%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-
-
+.box input[type="submit"]:hover{
+     cursor: pointer;
+     background-color: #ffc107;
+     color: #000;
 }
 
-.btn{
-	border: 1px solid #fff;
-	padding: 10px 30px;
-	color: #fff;
-	text-decoration: none; 
-	transition: 0.6s;
+.box a{
+     text-decoration: none;
+     font-size: 12px;
+     line-height: 20px;
+     color:darkgrey;
 }
 
-.btn:hover {
-	background-color: #fff;
-	color: #000;
+.box a:hover{
+     color:#ffc107;
 }
-</style>
+     </style>
 </head>
 <body>
-      <header>
-      	<div class="logo">
-      		<img src="images/logo.png">
-      	</div>
-      	<div class="main"> 
-                <a href="https://t.me/joinchat/SFvmDRXVTBbOyEbqk5qsGg"><img src="te.jpg" width="50" height="50"></a>
-                <a href="https://m.facebook.com/groups/748608469061666/?ref=group_browse"><img src="images/dd.jpg" width="50" height="50"></a> 
-                <a href="https://www.instagram.com/invites/contact/?i=qp34zd67ld&utm_content=katwvgz"><img src="images/i.jpg" width="50" height="50"></a>
-        	</div>
-        	<div class="title">
-        		<h1>SIMLAPAL VIEW</h1>
-        	</div>
-        	<div class="button">
-        		<a href="image.html" target="_self" class="btn">Gallery</a>
-        		<a href="video.html" target="_self" class="btn">Videos</a>
-        		<a href="" class="btn">LEARN MORE</a>
-        	</div>
-      </header>
+     <div class="box">
+     	<img src="dn.jpg" class="man">
+     	<h1>Login Here</h1>
+     	<form>
+     		<input type="text" placeholder="Username">
+     		<input type="password" placeholder="password">
+     		<input type="submit" href="index1.html" target="_self" class="btn" value="Login">
+     		<a href="https://discord.gg/z6Wz3DZNKr">Forgot Password</a>
+     	</form>
+     </div>
+
 </body>
 </html>
