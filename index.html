@@ -1,102 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>TRANSPARENT LOGIN FORM</title>
-	<style>
-          body{
-     margin: 0;
-     padding: 0;
-     background-image: url(../2.jpg);
-     background-size: cover;
-     background-position: center;
-     height: 100vh;
-     font-family: Century Gothic;
-}
-.box{
-     width: 320px;
-     height: 380px;
-     background-color: #000000b3;
-     color:#fff;
-     position: absolute;
-     transform: translate(-50%,-50%);
-     left:50%;
-     top:50%;
-     padding: 70px 30px;
-     box-sizing: border-box;
-     border-radius: 10px;
-}
-.man{
-     width: 100px;
-     height: 100px;
-     border-radius: 50%;
-     position: absolute;
-     top:-50px;
-     left:calc(50% - 50px);
-}
-
-h1{
-     margin: 0;
-     padding: 0 0 20px;
-     text-align: center;
-     font-size: 22px;
-}
-
-.box input{
-     width: 100%;
-     margin-bottom: 20px;
-}
-
-.box input[type="text"],input[type="password"]
-{
-     border: none;
-     border-bottom: 1px solid #fff;
-     background-color: transparent;
-     outline: none;
-     height: 40px;
-     color: #fff;
-     font-size:16px;
-}
-
-.box input[type="submit"]{
-     border: none;
-     outline: none;
-     height: 40px;
-     background-color: #fb2525;
-     color: #fff;
-     font-size: 18px;
-     border-radius: 20px;
-     transition: 0.4s ease;
-}
-
-.box input[type="submit"]:hover{
-     cursor: pointer;
-     background-color: #ffc107;
-     color: #000;
-}
-
-.box a{
-     text-decoration: none;
-     font-size: 12px;
-     line-height: 20px;
-     color:darkgrey;
-}
-
-.box a:hover{
-     color:#ffc107;
-}
-     </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
 </head>
-<body>
-     <div class="box">
-     	<img src="dn.jpg" class="man">
-     	<h1>Login Here</h1>
-     	<form>
-     		<input type="text" placeholder="Username">
-     		<input type="password" placeholder="password">
-     		<input type="submit" href="index1.html" target="_self" class="btn" value="Login">
-     		<a href="https://discord.gg/z6Wz3DZNKr">Forgot Password</a>
-     	</form>
-     </div>
 
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
 </body>
+
 </html>
